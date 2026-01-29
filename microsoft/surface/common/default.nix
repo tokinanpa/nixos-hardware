@@ -17,18 +17,18 @@ let
   srcVersion =
     with config.hardware.microsoft-surface;
     if kernelVersion == "longterm" then
-      "6.12.19"
+      "6.12.65"
     else if kernelVersion == "stable" then
-      "6.15.9"
+      "6.18.7"
     else
       abort "Invalid kernel version: ${kernelVersion}";
 
   srcHash =
     with config.hardware.microsoft-surface;
     if kernelVersion == "longterm" then
-      "sha256-1zvwV77ARDSxadG2FkGTb30Ml865I6KB8y413U3MZTE="
+      "sha256-VOhSZnrzXA7QbPyBMR5l+n9feYo7/PeKVZ07R4WhOcE="
     else if kernelVersion == "stable" then
-      "sha256-6U86+FSSMC96gZRBRY+AvKCtmRLlpMg8aZ/zxjxSlX0="
+      "sha256-tyak0Vz5rgYhm1bYeCB3bjTYn7wTflX7VKm5wwFbjx4="
     else
       abort "Invalid kernel version: ${kernelVersion}";
 
